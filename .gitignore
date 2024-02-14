@@ -1,0 +1,4 @@
+*.o
+Parallel_factorial
+.qmake.stash
+.qtc_clangd*
