@@ -38,10 +38,6 @@ int main(int argc, char* argv[])
     }
     if (argc < 3){
         cores = thread::hardware_concurrency();
-        if (cores == 0){
-            cout << "Невозможно вычислить оптимальное количество потоков автоматически. Пожалуйста, укажите количество потоков явно." << endl;
-            return 3;
-        }
     }else{
         if (isdigit(*argv[2])){
             cores = stoi(argv[2]);
@@ -49,6 +45,10 @@ int main(int argc, char* argv[])
             cout << argv[2] <<" не число!" << endl;
             return 2;
         }
+    }
+    if (cores == 0){
+        cout << "Невозможно вычислить оптимальное количество потоков автоматически. Пожалуйста, укажите количество потоков явно." << endl;
+        return 3;
     }
     auto begin_time = chrono::steady_clock::now();
     int lenght_interval = num / cores;
