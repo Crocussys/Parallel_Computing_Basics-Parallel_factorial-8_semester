@@ -10,7 +10,7 @@
 
 # Запуск
 
-- `$ ./Parallel_factorial [number] {count_threads}`
+- `$ ./Parallel_factorial number [count_threads]`
 
 `number` - Факториал какого числа надо посчитать. ! Не больше 20 !
 
