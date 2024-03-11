@@ -4,8 +4,8 @@
 
 # Установка
 
-- `$ git clone git@github.com:Crocussys/Parallel_factorial.git`
-- `$ cd Parallel_factorial/`
+- `$ git clone git@github.com:Crocussys/Parallel_Computing_Basics-Parallel_factorial-8_semester.git`
+- `$ cd Parallel_Computing_Basics-Parallel_factorial-8_semester/`
 - `$ make`
 
 # Запуск
